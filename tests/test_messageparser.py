@@ -126,7 +126,7 @@ class TestMessageParser(unittest.TestCase):
 			]
 
 		parsed_topic_0 = MP._get_topics_from_msg(test_topics[0])
-		self.assertEqual(parsed_topic_0, ['#testing_1234567'], 'Topic length not working')
+		self.assertEqual(parsed_topic_0, ['#testing_12345678'], 'Topic length not working')
 		parsed_topic_1 = MP._get_topics_from_msg(test_topics[1])
 		self.assertEqual(parsed_topic_1, ['#test'], 'Not catching special char in parse topics')
 		parsed_topic_2 = MP._get_topics_from_msg(test_topics[2])
