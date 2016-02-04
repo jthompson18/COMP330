@@ -38,7 +38,7 @@ Instructions
 
 #. Create a new virtual environment for your project:
 
-   With plain virtualenv_::
+   With virtualenv_::
 
        virtualenv /path/to/my-project-venv
        source /path/to/my-project-venv/bin/activate
