@@ -28,6 +28,12 @@ class MessageParser:
 	*\tAll validation will have been completed prior to the use of this module. \n
 	*\tEmojis are not currently being handled explicityly. It is assumed they are in a string based encoding so they will be handled as such. \n
 
+	**ReExs:**\n
+
+	*\tMentions: (?<!\S)(@[A-Za-z0-9\_]{1,self.MAX_MENTION_LENGTH}) where MAX_MENTION_LENGTH is 15
+	*\tTopics: (?<!\S)(#[A-Za-z0-9\_]+)
+	*\tURIs: (?<!\S)(https?:\/\/\S{1,self.MAX_URI_LENGTH}) where MAX_URI_LENGTH is 23
+
 	"""
 	def __init__(self):
 		self.MAX_MENTION_LENGTH = '15'
