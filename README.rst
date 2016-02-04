@@ -53,6 +53,12 @@ Instructions
 
         paver test
 
+#. Generate docs::
+
+        paver doc_html #just generates the documentation
+        or
+        paver doc_open #generates and opens the documentation
+
 **Project setup is now complete!**
 
 .. _virtualenv: http://www.virtualenv.org/en/latest/
