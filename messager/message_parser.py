@@ -3,9 +3,14 @@ import re
 class MessageParseError(Exception):
 	"""
 	Exception to be thrown by MessageParser. 
-	This Exception is thrown when a message being parsed is not a sting and when a list of messages to be parsed is not of type list.
+	This Exception is thrown when a message being parsed by parse_message is not a string.
+	And when a list of messages to be parsed by batch_parse_message is not of type list.
 	"""
 	def __init__(self, value):
+		"""
+
+		:params value: String value for the Exception to display in stacktrace.
+		"""
 		self.value = value
 
 	def __str__(self):
@@ -13,16 +18,22 @@ class MessageParseError(Exception):
 
 class MessageParser:
 	"""
-	.. autoclass:: MessageParser
-
 	Message Parser for twitter/slack like messages. Prior to reaching this module the messages will have been validated.
+
+	**Considerations:**\n
+
+	*\tA mention is defined as any alphanumerical character or underscore('_') preceded by an ' @' for up to 15 characters. \n
+	*\tA topic is defined as any alphanumerical characters or special character preceded by an ' #' for any length of characters. \n
+	*\tA URI is defined as a shortend URI that is shortend into a predefined format that begins with ' https://'. \n
+	*\tAll validation will have been completed prior to the use of this module. \n
+	*\tEmojis are not currently being handled explicityly. It is assumed they are in a string based encoding so they will be handled as such. \n
+
 	"""
 	def __init__(self):
-		"""
-		Set up regexs for parsing the message based on twitter criteria.
-		"""
 		self.MAX_MENTION_LENGTH = '15'
 		self.MAX_URI_LENGTH = '23'
+
+		#TODO add handling for real mentions, i.e., mentions that map to other users versus dead/inacitve mentions
 
 		self.mentions_regex = '(?<!\S)(@[A-Za-z0-9_]{1,'+self.MAX_MENTION_LENGTH+'})'
 		self.topics_regex =  '(?<!\S)(#[A-Za-z0-9_]+)'

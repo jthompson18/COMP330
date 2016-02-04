@@ -2,6 +2,8 @@
 """slack like messaging system"""
 
 from messager import metadata
+from messager.message_parser import MessageParseError
+from messager.message_parser import MessageParser
 
 
 __version__ = metadata.version
