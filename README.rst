@@ -99,5 +99,8 @@ Opening Issues
 --------------
 
 ### Templates
-    - [New Issue](https://github.com/jthompson18/COMP330/issues/new?body=%23%23%23%20Description%20of%20issue%0A%0A%0A%23%23%23%20Reproduction%20Steps%0A%0A%0A%23%23%23%20Actual%20behavior%2Fresult%0A%0A%0A%23%23%23%20Expected%20behavior%2Fresult%0A%0A%0A%23%23%23%20Affected%20Org%2C%20Group%2C%20Account%0A%0A%0A%23%23%23%20Additional%20info%20(browser%20detail%2C%20etc)%0A%0A%0A)
-    - [Feature Request](https://github.com/jthompson18/COMP330/issues/new?body=%23%23%20Description%0A%0A%0A%23%23%20Reason%0A%0A%0A%23%23%20Background%0A%0A%0A)
+    - `New Issue`_
+    - `Feature Request`_
+
+.. _New Issue: https://github.com/jthompson18/COMP330/issues/new?body=%23%23%23%20Description%20of%20issue%0A%0A%0A%23%23%23%20Reproduction%20Steps%0A%0A%0A%23%23%23%20Actual%20behavior%2Fresult%0A%0A%0A%23%23%23%20Expected%20behavior%2Fresult%0A%0A%0A%23%23%23%20Affected%20Org%2C%20Group%2C%20Account%0A%0A%0A%23%23%23%20Additional%20info%20(browser%20detail%2C%20etc)%0A%0A%0A
+.. _Feature Request: https://github.com/jthompson18/COMP330/issues/new?body=%23%23%20Description%0A%0A%0A%23%23%20Reason%0A%0A%0A%23%23%20Background%0A%0A%0A
