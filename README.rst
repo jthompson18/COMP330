@@ -94,3 +94,11 @@ Tox is a tool for running your tests on all supported Python versions.
 Running it via ``tox`` from the project root directory calls ``paver test_all`` behind the scenes for each Python version,
 and does an additional test run to ensure documentation generation works flawlessly.
 You can customize the list of supported and thus tested Python versions in the ``tox.ini`` file.
+
+Opening Issues
+--------------
+
+### Templates
+ - [New Issue](https://github.com/jthompson18/COMP330/issues/new?body=%23%23%23%20Description%20of%20issue%0A%0A%0A%23%23%23%20Reproduction%20Steps%0A%0A%0A%23%23%23%20Actual%20behavior%2Fresult%0A%0A%0A%23%23%23%20Expected%20behavior%2Fresult%0A%0A%0A%23%23%23%20Affected%20Org%2C%20Group%2C%20Account%0A%0A%0A%23%23%23%20Additional%20info%20(browser%20detail%2C%20etc)%0A%0A%0A)
+
+- [Feature Request](https://github.com/jthompson18/COMP330/issues/new?body=%23%23%20Description%0A%0A%0A%23%23%20Reason%0A%0A%0A%23%23%20Background%0A%0A%0A)
