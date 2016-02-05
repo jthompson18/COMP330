@@ -96,9 +96,10 @@ and does an additional test run to ensure documentation generation works flawles
 You can customize the list of supported and thus tested Python versions in the ``tox.ini`` file.
 
 Opening Issues
---------------
+==============
 
-### Templates
+Templates
+---------
     - `New Issue`_
     - `Feature Request`_
 
