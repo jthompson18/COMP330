@@ -1,7 +1,7 @@
 import unittest
-import messager
+import messenger
 
-from messager.message_parser import MessageParser, MessageParseError
+from messenger.message_parser import MessageParser, MessageParseError
 
 class TestMessageParser(unittest.TestCase):
 	def setUp(self):

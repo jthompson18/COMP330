@@ -6,9 +6,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-..module:: messager.message_parser
+..module:: messenger.message_parser
 
-.. automodule:: messager.message_parser
+.. automodule:: messenger.message_parser
 
 .. autoclass:: MessageParser
 	:members:

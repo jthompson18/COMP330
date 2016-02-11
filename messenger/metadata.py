@@ -5,7 +5,7 @@ Software Engineering project 0
 """
 
 # The package name, which is also the "UNIX name" for the project.
-package = 'messager'
+package = 'messenger'
 project = "Messaging System Module"
 project_no_spaces = project.replace(' ', '')
 version = '0.1'

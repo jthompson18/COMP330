@@ -22,7 +22,7 @@ import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
 # Import project metadata
-from messager import metadata
+from messenger import metadata
 
 # -- General configuration ----------------------------------------------------
 

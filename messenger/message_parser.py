@@ -52,8 +52,7 @@ class MessageParser:
 		:param message: String message to be parsed
 		:return: List of found mentions or an empty list
 		"""
-		mentions_regex = re.compile(self.mentions_regex)
-		mentions = re.findall(mentions_regex, message)
+		mentions = re.findall(self.mentions_regex, message)
 		return mentions
 
 	def _get_topics_from_msg(self, message):
@@ -63,8 +62,7 @@ class MessageParser:
 		:param message: String message to be parsed
 		:return: List of found topics or an empty list
 		"""
-		topics_regex = re.compile(self.topics_regex)
-		topics = re.findall(topics_regex, message)
+		topics = re.findall(self.topics_regex, message)
 		return topics
 
 	def _get_uris_from_msg(self, message):
@@ -74,8 +72,7 @@ class MessageParser:
 		:param message: String message to be parsed
 		:return: List of found URIs or an empty list
 		"""
-		uri_regex = re.compile(self.uri_regex)
-		uris = re.findall(uri_regex, message)
+		uris = re.findall(self.uri_regex, message)
 		return uris
 
 	def parse_message(self, message):

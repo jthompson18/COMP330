@@ -8,8 +8,8 @@ from pytest import raises
 import pytest
 parametrize = pytest.mark.parametrize
 
-from messager import metadata
-from messager.main import main
+from messenger import metadata
+from messenger.main import main
 
 
 class TestMain(object):

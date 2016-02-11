@@ -7,7 +7,7 @@ from __future__ import print_function
 import argparse
 import sys
 
-from messager import metadata
+from messenger import metadata
 
 
 def main(argv):

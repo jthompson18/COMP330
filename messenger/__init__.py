@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """slack like messaging system"""
 
-from messager import metadata
-from messager.message_parser import MessageParseError
-from messager.message_parser import MessageParser
+from messenger import metadata
+from messenger.message_parser import MessageParseError
+from messenger.message_parser import MessageParser
 
 
 __version__ = metadata.version

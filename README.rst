@@ -1,5 +1,5 @@
 =========================
- Messager
+ messenger
 =========================
 
 This project is built using the `python project template`_. For now I will leave all the tools originally included in the template. They include:

@@ -35,16 +35,16 @@ except ImportError:
 sys.path.insert(0, os.path.abspath('.'))
 
 ## Constants
-CODE_DIRECTORY = 'messager'
+CODE_DIRECTORY = 'messenger'
 DOCS_DIRECTORY = 'docs'
 TESTS_DIRECTORY = 'tests'
 PYTEST_FLAGS = ['--doctest-modules']
 
 # Import metadata. Normally this would just be:
 #
-#     from messager import metadata
+#     from messenger import metadata
 #
-# However, when we do this, we also import `messager/__init__.py'. If this
+# However, when we do this, we also import `messenger/__init__.py'. If this
 # imports names from some other modules and these modules have third-party
 # dependencies that need installing (which happens after this file is run), the
 # script will crash. What we do instead is to load the metadata module by path
@@ -266,11 +266,11 @@ setup_dict = dict(
     zip_safe=False,  # don't use eggs
     entry_points={
         'console_scripts': [
-            'messager_cli = messager.main:entry_point'
+            'messenger_cli = messenger.main:entry_point'
         ],
         # if you have a gui, use this
         # 'gui_scripts': [
-        #     'messager_gui = messager.gui:entry_point'
+        #     'messenger_gui = messenger.gui:entry_point'
         # ]
     }
 )
